@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Josefin Sans";
+  background-color: ghostwhite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar {
+  width: 0px;
+}
+.food-card {
+  width: 320px;
+  height: 290px;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+  border: 1px solid black;
+}
+.food-card img {
+  height: 206px;
+  width: 300px;
+  border-radius: 10px;
+}
+.food-card:hover {
+  transform: scale(1.1, 1.1);
+}
+.card-title {
+  transition: all ease-in-out 0.3s;
+}
+.card-title:hover {
+  background-color: orange;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dropdown{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+ 
 }
+.dropdown-row{
+  padding: 3px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+}
+@media screen and (max-width: 1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
   }
 }
